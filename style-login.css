@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
 *{
     padding: 0;
     margin: 0;
+}
+
+body{
+    font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
 }
 
 .background-container{
@@ -13,6 +19,12 @@
     align-items: center;
 }
 
+.logo-bank{
+    margin:auto;
+    width: 150px;
+    padding: 5px;
+}
+
 .card-container{
     margin: 0 auto;
     padding: 10px;
@@ -21,9 +33,9 @@
     position: static;
     border-radius: 30px;
     display: grid;
-    align-content: center;
+    gap: 10px;
     justify-content: center;
-    gap: 25px;
+    align-content: center;
 }
 
 .glass-effect{
