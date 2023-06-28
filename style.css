@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.background-container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.3)), url("./assets/background-galaxia.jpg");
+    background-size: cover;
+    backdrop-filter: blur(6px);
+    display: flex;
+    align-items: center;
+}
+
+.card-container{
+    margin: 0 auto;
+    padding: 10px;
+    width: 25rem;
+    height: 20rem;
+    position: static;
+    border-radius: 30px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.glass-effect{
+    background-color: rgba(255, 255, 255, 0.364);
+    backdrop-filter: blur(4rem);
+    -webkit-backdrop-filter: blur(4rem);;
+}
+
+.container-input{
+    width: 18rem;
+}
+
+.container-btn{
+    display: grid;
+    justify-items: center;
+}
+
+.btn-primary{
+    background-color: rgba(60, 38, 97, 0.553);
+    border-color: rgba(60, 38, 97, 0.268);
+}
+
+.btn-primary:hover{
+    background-color: rgba(60, 38, 97, 0.268);
+    border-color: rgba(60, 38, 97, 0.844);
+    color: rgba(60, 38, 97);
+}
+
+.form-control{
+    background-color: rgba(60, 38, 97, 0.053);
+    border-color: rgba(60, 38, 97, 0.844);
+    color: rgba(60, 38, 97, 0.946);
+    height: 45px;
+}
+
+.form-control:focus{
+    background-color: rgba(60, 38, 97, 0.553);
+    border-color: rgba(60, 38, 97, 0.844);
+    color: rgba(255, 255, 255);
+}
