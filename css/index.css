@@ -12,9 +12,8 @@ body{
 .background-container{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.3)), url("./assets/background-galaxia.jpg");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/background-galaxia.jpg");
     background-size: cover;
-    backdrop-filter: blur(6px);
     display: flex;
     align-items: center;
 }

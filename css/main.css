@@ -9,55 +9,48 @@ body{
     font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
 }
 
+nav{
+    background-color: rgba(255, 255, 255, 0.096);
+    height: 80px;
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+h1{
+    margin: 6rem 2rem;
+}
+
 .background-container{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.3)), url("./assets/background-galaxia.jpg");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.404)), url("../assets/background-galaxia.jpg");
     background-size: cover;
-    backdrop-filter: blur(6px);
     display: flex;
     align-items: center;
 }
 
 .logo-bank{
     margin:auto;
-    width: 150px;
+    width: 120px;
     padding: 5px;
-}
-
-.container-logo-bank{
-    grid-column-start: -4;
-    grid-column-end: -1;
+    top: 1rem;
 }
 
 .card-container{
     margin: 0 auto;
     padding: 10px;
-    width: 80rem;
+    width: 300rem;
     height: 35rem;
-    position: static;
-    border-radius: 30px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
 }
 
-nav{
-    height: 50px;
-    grid-column-start: 1;
-    grid-column-end: -1;
-}
-
-.container-checkbalance, .container-depositmoney, .container-withdrawmoney{
+/* .container-checkbalance, .container-depositmoney, .container-withdrawmoney{
     background-color: rgba(255, 255, 255, 0.158);
-    backdrop-filter: blur(4rem);
-    -webkit-backdrop-filter: blur(4rem);
     margin: 30px;
     padding: 10px;
     width: 350px;
     height: 300px;
     border-radius: 20px;
-}
+} */
 
 
 .glass-effect{
