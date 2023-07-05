@@ -9,17 +9,6 @@ body{
     font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
 }
 
-nav{
-    background-color: rgba(255, 255, 255, 0.096);
-    height: 80px;
-    grid-column-start: 1;
-    grid-column-end: -1;
-}
-
-h1{
-    margin: 6rem 2rem;
-}
-
 .background-container{
     width: 100%;
     height: 100vh;
@@ -29,43 +18,83 @@ h1{
     align-items: center;
 }
 
+nav{
+    background-color: #191029e7;
+    width: 100%;
+    height: 70px;
+    display: inline;
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+.welcome{
+    margin: 1rem;
+    margin-top: 25px;
+    padding: 0;
+    /* margin-bottom: 20px; */
+    font-weight: 600;
+    font-size: 35px;
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+h2{
+    font-weight: 600;
+    margin: 0;
+}
+
+#check-balance{
+    font-size: 30px;
+    margin: 0 2px;
+}
+
 .logo-bank{
     margin:auto;
-    width: 120px;
+    width: 100px;
     padding: 5px;
-    top: 1rem;
+    position: relative;
+    top: 3px;
+    left: 30px;
 }
 
 .card-container{
-    margin: 0 auto;
-    padding: 10px;
-    width: 300rem;
-    height: 35rem;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70px 80px;
 }
-
-/* .container-checkbalance, .container-depositmoney, .container-withdrawmoney{
-    background-color: rgba(255, 255, 255, 0.158);
-    margin: 30px;
-    padding: 10px;
-    width: 350px;
-    height: 300px;
-    border-radius: 20px;
-} */
-
 
 .glass-effect{
     background-color: rgba(255, 255, 255, 0.364);
-    backdrop-filter: blur(4rem);
-    -webkit-backdrop-filter: blur(4rem);
 }
 
-.container-input{
-    width: 18rem;
+.illustration-image img{
+    width: 35rem;
+    margin-top: 40px;
 }
 
-.container-btn{
-    display: grid;
-    justify-items: center;
+.illustration-image{
+    grid-column-start: 2;
+    grid-column-end: -2;
+    grid-row-start: -1;
+    grid-row-end: -1;
+}
+
+.container-functions{
+    background-color: rgba(255, 255, 255, 0.158);
+    margin: 15px;
+    margin-left: 60px;
+    padding: 10px;
+    width: 500px;
+    height: 430px;
+    border-radius: 20px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.container-checkbalance{
+    margin: 10px;
 }
 
 .btn-primary{
@@ -90,4 +119,28 @@ h1{
     background-color: rgba(60, 38, 97, 0.553);
     border-color: rgba(60, 38, 97, 0.844);
     color: rgba(255, 255, 255);
+}
+
+.container-input{
+    width: 370px;
+    margin: 10px;
+    align-items: center;
+}
+
+.container-depositmoney, .container-withdrawmoney{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 35px 1fr;
+}
+
+h3{
+    margin-left: 10px;
+    font-weight: 600;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.container-btn{
+    margin: auto;
 }

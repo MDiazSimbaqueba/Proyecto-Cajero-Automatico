@@ -1,3 +1,4 @@
+let userId = localStorage.getItem('userId');
+// console.log(userId);
 let welcomeUser = document.querySelector('h1');
-    welcomeUser.textContent = "Bienvenido de nuevo" + credentialName(userId.value);
-    console.log(welcomeUser);
+    welcomeUser.textContent = "¡Hola de nuevo, " + userId + "!";
