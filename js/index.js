@@ -1,7 +1,7 @@
 let accounts = [
     {nombre: 'Miguel', saldo: 200, password: 'User123'},
-    {nombre: 'Felipe', saldo: 200, password: 'User456'},
-    {nombre: 'Ximena', saldo: 200, password: 'User789'}
+    {nombre: 'Felipe', saldo: 300, password: 'User456'},
+    {nombre: 'Ximena', saldo: 500, password: 'User789'}
 ];
 
 //Encapsula la información de los input
@@ -28,10 +28,10 @@ function loginUser(event) {
         }
 
         for (let i = 0; i < accounts.length; i++) {
-            console.log(accounts[i].nombre);
             if (credential.userId == accounts[i].nombre) {
                 if (credential.userPassword == accounts[i].password) {
                     localStorage.setItem('userId', accounts[i].nombre);
+                    localStorage.setItem('balance', accounts[i].saldo);
                     location.href='./main.html';
                 } else {
                     textInfo.textContent = "Usuario y/o contraseña inválidos";

@@ -33,14 +33,14 @@ body{
     position: static;
     border-radius: 30px;
     display: grid;
-    justify-content: center;
     align-content: center;
+    justify-content: center;
 }
 
 .glass-effect{
     background-color: rgba(255, 255, 255, 0.364);
     /* backdrop-filter: blur(4rem);
-    -webkit-backdrop-filter: blur(4rem);; */
+    -webkit-backdrop-filter: blur(4rem);*/
 }
 
 .container-input{
@@ -78,8 +78,5 @@ body{
 }
 
 .text-info-sp{
-    /* text-align: center; */
-    position: fixed;
-    top: 14.4rem;
-    right: 5.3rem;
+    text-align: center;
 }

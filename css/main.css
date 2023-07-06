@@ -31,7 +31,6 @@ nav{
     margin: 1rem;
     margin-top: 25px;
     padding: 0;
-    /* margin-bottom: 20px; */
     font-weight: 600;
     font-size: 35px;
     grid-column-start: 1;
@@ -70,8 +69,8 @@ h2{
 }
 
 .illustration-image img{
-    width: 35rem;
-    margin-top: 40px;
+    width: 40rem;
+    margin-top: 20px;
 }
 
 .illustration-image{
