@@ -22,8 +22,12 @@ btnDepositMoney.addEventListener('click', (event) => {
     } else {
         const numDepositMoney = parseInt(inpDepositMoney.value);
         balance = parseInt(balance) + numDepositMoney;
-        checkBalance.textContent = balance;
         inpDepositMoney.value = "";
+        if (balance <= 990) {
+            checkBalance.textContent = balance;
+        } else {
+            alert("Como regla de negocio, una cuenta no debe de tener más de $990");
+        }
     }
 })
 
@@ -37,7 +41,11 @@ btnWithdrawMoney.addEventListener('click', (event) => {
     } else {
         const numDrawMoney = parseInt(inpWithdrawMoney.value);
         balance = parseInt(balance) - numDrawMoney;
-        checkBalance.textContent = balance;
         inpWithdrawMoney.value = "";
+        if (balance >= 10) {
+            checkBalance.textContent = balance;
+        } else {
+            alert("Como regla de negocio, una cuenta no debe de tener menos de $10");
+        }
     }
 })
